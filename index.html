@@ -82,7 +82,7 @@ body { font-family: 'Galano', sans-serif; font-weight: 400; background: #f5f5f3;
 .bike-name { font-size: 18px; font-weight: 600; color: #111; }
 .bike-desc { font-size: 13px; font-weight: 300; color: #666; margin-top: 6px; line-height: 1.6; }
 .bike-price { display: inline-block; margin-top: 12px; font-size: 13px; font-weight: 600; color: #e4120a; background: #fef0ef; padding: 5px 12px; border-radius: 6px; }
-.bike-actions { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 8px; margin-top: 14px; }
+.bike-actions { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 8px; margin-top: 14px; }
 .bike-btn { padding: 11px 4px; border-radius: 10px; border: 0.5px solid #e0e0e0; background: #fff; font-size: 12px; font-family: 'Galano', sans-serif; font-weight: 400; color: #333; cursor: pointer; text-align: center; }
 .bike-btn:active { background: #f5f5f3; }
 .bike-btn.primary { background: #e4120a; color: #fff; border-color: #e4120a; font-weight: 600; }
@@ -121,7 +121,7 @@ body { font-family: 'Galano', sans-serif; font-weight: 400; background: #f5f5f3;
       </div>
       <div class="tile" onclick="show('bikes')">
         <div class="tile-icon"><i class="ti ti-bike"></i></div>
-        <div class="tile-body"><div class="tile-title">Highlight Bikes</div><div class="tile-sub">Entdecken &amp; konfigurieren</div></div>
+        <div class="tile-body"><div class="tile-title">Highlight Bikes</div><div class="tile-sub">Entdecke unsere Bike Highlights in der Lenzerheide</div></div>
         <i class="ti ti-arrow-right tile-arrow"></i>
       </div>
       <div class="tile" onclick="go('https://thoemus.ch/services/testfahrten-buchen/')">
@@ -184,7 +184,6 @@ body { font-family: 'Galano', sans-serif; font-weight: 400; background: #f5f5f3;
           <div class="bike-price">ab CHF 5'490</div>
           <div class="bike-actions">
             <button class="bike-btn primary" onclick="go('https://bikes.thoemus.ch/oberrider')">Entdecken</button>
-            <button class="bike-btn" onclick="go('https://cockpit.thoemus.ch/TBW/BikeConfigurator/public/20')">Konfigurieren</button>
             <button class="bike-btn" onclick="vid('R6d6y0_gEfI','Oberrider')">Video</button>
           </div>
         </div>
@@ -197,7 +196,6 @@ body { font-family: 'Galano', sans-serif; font-weight: 400; background: #f5f5f3;
           <div class="bike-price">ab CHF 5'990</div>
           <div class="bike-actions">
             <button class="bike-btn primary" onclick="go('https://bike.thoemus.ch/lightrider-e-max')">Entdecken</button>
-            <button class="bike-btn" onclick="go('https://configurator.thoemus.ch/bike-model/Q29sbGVjdGlvbjoxMg==')">Konfigurieren</button>
             <button class="bike-btn" onclick="vid('EIx3mAV9_kw','Lightrider E_MAX')">Video</button>
           </div>
         </div>
@@ -210,7 +208,6 @@ body { font-family: 'Galano', sans-serif; font-weight: 400; background: #f5f5f3;
           <div class="bike-price">ab CHF 3'990</div>
           <div class="bike-actions">
             <button class="bike-btn primary" onclick="go('https://thoemus.ch/bikes/lightrider-worldcup-ultimate/')">Entdecken</button>
-            <button class="bike-btn" onclick="go('https://cockpit.thoemus.ch/TBW/BikeConfigurator/public/20')">Konfigurieren</button>
             <button class="bike-btn" onclick="vid('yshn1uqAZfI','Lightrider R3 WC')">Video</button>
           </div>
         </div>
@@ -223,7 +220,6 @@ body { font-family: 'Galano', sans-serif; font-weight: 400; background: #f5f5f3;
           <div class="bike-price">ab CHF 4'490</div>
           <div class="bike-actions">
             <button class="bike-btn primary" onclick="go('https://bike.thoemus.ch/sliker-r3')">Entdecken</button>
-            <button class="bike-btn" onclick="go('https://cockpit.thoemus.ch/TBW/BikeConfigurator/public/20')">Konfigurieren</button>
             <button class="bike-btn" onclick="vid('ccb7nnpwrM0','Sliker R3 Ultimate')">Video</button>
           </div>
         </div>
@@ -236,7 +232,6 @@ body { font-family: 'Galano', sans-serif; font-weight: 400; background: #f5f5f3;
           <div class="bike-price">ab CHF 3'290</div>
           <div class="bike-actions">
             <button class="bike-btn primary" onclick="go('https://bikes.thoemus.ch/sliker-x3')">Entdecken</button>
-            <button class="bike-btn" onclick="go('https://cockpit.thoemus.ch/TBW/BikeConfigurator/public/20')">Konfigurieren</button>
             <button class="bike-btn" onclick="vid('jvUrswKLj_k','Sliker X3')">Video</button>
           </div>
         </div>
@@ -265,7 +260,6 @@ body { font-family: 'Galano', sans-serif; font-weight: 400; background: #f5f5f3;
 <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
 <script>
 var hsFormLoaded = false;
-
 function show(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
